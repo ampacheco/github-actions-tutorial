@@ -13,4 +13,10 @@ jobs:
     steps:
     - name: Execute simple command
       run: echo "Hello world"
+      
+      
+    - name: Execute multiple commands:
+      run: \
+        npm -v
+        node -v
   
