@@ -16,7 +16,7 @@ jobs:
       
       
     - name: Execute multiple commands
-      run: \
+      run: |
         npm -v
         node -v
   
