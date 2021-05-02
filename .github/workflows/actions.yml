@@ -17,7 +17,7 @@ jobs:
       uses: actions/hello-world-javascript-action@master
       # with actions parameters
       with: 
-        who-to-greet: >|<aria
+        who-to-greet: Maria
       # Get the Output of the Task
     - name: Log Greeting Time
       run: echo "${{ steps.greet.outputs.time }}"
