@@ -27,7 +27,17 @@ jobs:
         print(platform.processor())
       shell: python  
 
-
+  run-windows-command-job:
+    runs-on: windows-latest
+    steps:
+    - name: Directory Powershell
+      run: Get_Location
+    - name: Run a Command on bash on Windows
+      shell: bash
+      run: pwd
+      
+      run: |
+        
 
         
         
