@@ -4,7 +4,7 @@ name: Action Workflow
 on: 
   push:
     branches: [master]
-  workkflow_dispatch:  
+  workflow_dispatch:  
 
 
 jobs:
