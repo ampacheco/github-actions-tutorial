@@ -1,0 +1,25 @@
+# Actions Workflows
+name: Action Workflow
+
+on: 
+  push:
+    branches: [master]
+  workkflow_dispatch:  
+
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run JSActions
+      id: greet # to be used as identifier of step in other step
+      # use speccify @ branch/version tag/commit id
+      uses: actions/hello-world-javascript-action@master
+      # with actions parameters
+      with: 
+        who-to-greet: >|<aria
+      # Get the Output of the Task
+    - name: Log Greeting Time
+      run: echo "${{ steps.greet.outputs.time }}"
+
+    
