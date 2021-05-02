@@ -13,14 +13,10 @@ jobs:
     steps:
     - name: Execute simple command
       run: echo "Hello world"
-      
-      
     - name: Execute multiple commands
       run: |
         npm -v
         node -v
-
-
     - name: Python Command in a Python Shell
       run : |
         import platform
@@ -28,6 +24,7 @@ jobs:
       shell: python  
 
   run-windows-command-job:
+    needs: ["run-shell-commands"]
     runs-on: windows-latest
     steps:
     - name: Directory Powershell
