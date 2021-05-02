@@ -35,10 +35,3 @@ jobs:
     - name: Run a Command on bash on Windows
       shell: bash
       run: pwd
-      
-      run: |
-        
-
-        
-        
-  
